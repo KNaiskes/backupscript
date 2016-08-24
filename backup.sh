@@ -5,7 +5,6 @@ echo "Starting"
 echo "*********************"
 
 #Directories
-home="/home/kiriakos/"
 usb="/media/usb0"
 filed="/media/usb0/dotfiles2" #File in which dotfiles will be saved
 
@@ -19,14 +18,14 @@ then
 fi
 
 #Dotfiles
-vim="/home/kiriakos/.vimrc"
-xinitrc="/home/kiriakos/.xinitrc"
-xdefaults="/home/kiriakos/.Xdefaults"
-tmux="/home/kiriakos/.tmux.conf"
-feh="/home/kiriakos/.fehbg"
-bashrc="/home/kiriakos/.bashrc"
-i3config="/home/kiriakos/.i3/config"
-i3statusbar="/home/kiriakos/.i3status.conf"
+vim="$HOME/.vimrc"
+xinitrc="$HOME/.xinitrc"
+xdefaults="$HOME/.Xdefaults"
+tmux="$HOME/.tmux.conf"
+feh="$HOME/.fehbg"
+bashrc="$HOME/.bashrc"
+i3config="$HOME/.i3/config"
+i3statusbar="$HOME/.i3status.conf"
 
 declare -a copier #array
 
