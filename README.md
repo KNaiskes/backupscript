@@ -1,4 +1,1 @@
-# backupscript
-Backup scripts for my dotfiles
-
-One was written in Python and the other one in bash, both of them work in the same way, they save the dotfiles in /media/usb0
+Some of the scripts I wrote to make me a little bit lazier
