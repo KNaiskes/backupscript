@@ -9,10 +9,10 @@ install()
 
 remove()
 {
-	remove_Apps="vim-tiny nano"
-	sudo apt-get remove -y remove_Apps
+	remove_Apps="nano"
+	sudo apt-get remove -y $remove_Apps
 	sudo apt-get autoremove
-	sudo apt-get auto-clean
+	sudo apt-get autoclean
 	sudo apt-get clean
 }
 
@@ -21,10 +21,10 @@ read  option
 
 if [ $option == 1 ]
 then
-	install_Apps
+	install
 elif [ $option == 2 ]
 then
-	remove_Apps
+	remove
 else
 	echo "unknown"
 fi
