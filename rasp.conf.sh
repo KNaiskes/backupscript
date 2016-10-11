@@ -26,10 +26,10 @@ setup_dots()
 	git clone https://github.com/KNaiskes/dotfiles
 
 	#Dotfiles
-	vim="$HOME/dotfiles/.vimrc"
-	xdefaults="$HOME/dotfiles/.xdefaults"
+	vim="$HOME/dotfiles/vim/.vimrc"
+	xdefaults="$HOME/dotfiles/.Xdefaults"
 	tmux="$HOME/dotfiles/.tmux.conf"
-	bashrc="$HOME/dotfiles/.bashrc
+	bashrc="$HOME/dotfiles/.bashrc"
 	declare -a copier
 	copier=($vim $xdefaults $tmux $bashrc)
 
@@ -53,5 +53,5 @@ elif [ $option == 3 ]
 then
 	setup_dots
 else
-	echo "unknown"
+	echo "unknown input "
 fi
