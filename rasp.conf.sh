@@ -23,7 +23,13 @@ setup_dots()
 {
 
 	cd $HOME
-	git clone https://github.com/KNaiskes/dotfiles
+
+	if [ ! -d "$dotfiles" ]
+	then
+		echo "cloning the dotfiles repository"
+		git clone https://github/KNaiskes/dotfiles
+		echo "Done"
+	fi
 
 	#Dotfiles
 	vim="$HOME/dotfiles/vim/.vimrc"
