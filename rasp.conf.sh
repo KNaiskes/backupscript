@@ -22,12 +22,12 @@ remove()
 setup_dots()
 {
 
-	cd $HOME
-
+	dotfiles="$HOME/dotfiles"
 	if [ ! -d "$dotfiles" ]
 	then
+		cd $HOME
 		echo "cloning the dotfiles repository"
-		git clone https://github/KNaiskes/dotfiles
+		git clone https://github.com/KNaiskes/dotfiles.git
 		echo "Done"
 	fi
 
