@@ -1,3 +1,4 @@
+#Conside changing permissions after cloning the script so no one will be able to add malicious code.
 #!/bin/bash
 
 install()
