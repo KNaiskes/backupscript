@@ -1,3 +1,1 @@
-Some of the scripts I wrote to make me a little bit lazier.
-Mainly in bash and python.
-Tested on Linux, most of them may work on mac os too.
+Here are some scripts that I wrote to automate some boring processes in my Linux systems. 
