@@ -60,8 +60,8 @@ function setupdotFiles {
 	cp dotfiles/.Xdefaults $HOME
 	cp dotfiles/.tmux.conf $HOME
 	cp dotfiles/.bashrc $HOME
-	cp dotfiles/vim/.vimrc $HOME
-	sudo cp dotfiles/vim/kiriakos_theme.vim /usr/share/vim/vim80/colors
+	cp dotfiles/.vimrc $HOME
+	sudo cp dotfiles/.vim/colors/kiriakos_theme.vim /usr/share/vim/vim80/colors
 }
 
 
