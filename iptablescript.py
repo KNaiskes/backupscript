@@ -21,6 +21,7 @@ def ipv4():
             "-A INPUT -p tcp -m state --state NEW --dport 22 -j ACCEPT", #ssh
             "-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT",
             "-A INPUT -j DROP",
+            #"-I INPUT -p tcp --dport 8080 -j ACCEPT",
             "COMMIT");
     for i in commands:
         wfile.write(i+"\n");
