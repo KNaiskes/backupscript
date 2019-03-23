@@ -8,5 +8,8 @@ if [ ! -d $download_dir ]; then
     echo "Created download directory"
 fi
 
-echo "Setting up a Python virtual enviroment and installing youtube_dl"
-( cd $enviroment_dir && python -m venv venv && source venv/bin/activate && pip install youtube_dl )
+
+if [ ! -d "${enviroment_dir}venv" ]; then
+    echo "Setting up a Python virtual enviroment and installing youtube_dl"
+    ( cd $enviroment_dir && python -m venv venv && source venv/bin/activate && pip install youtube_dl )
+fi
